@@ -1,3 +1,16 @@
+
+/*reminder*/
+/*  class with . and id with #   */
+/* to create a box: margin, border, padding*/
+/*margin-top can be used for the top side of box and bottom....*/
+/*border-width, style, color ----puts a line around the box*/
+/*can use a border-left-width.....*/
+/*border: 2px solid yellow; also works same as above*/
+/*padding makes empty spaces in the box padding: 50px; (top right bottom left)*/
+
+
+
+/*Text changes styling*/
 .cat {
     background-color: rgba(166, 255, 231, 0.5);
     color: rgb(231, 155, 41); 
@@ -18,4 +31,23 @@ body{
     color:rgb(104, 3, 36);
      font-size: 21px; 
      font-family: 'Courier New', Courier, monospace;
+}
+
+div{
+    background: rgb(255, 192, 216);
+    width: 600px;
+    /* height: 600px;*/
+}
+
+span{
+    color: yellow;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+/*cat images below*/
+#cat1{
+    width: 400px;
+
 }
