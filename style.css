@@ -1,8 +1,16 @@
 .cat {
     background-color: rgba(166, 255, 231, 0.5);
     color: rgb(231, 155, 41); 
+    font-size: 21px; 
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    background-color: rgba(166, 255, 231, 0.5);
+    color: rgb(231, 155, 41); 
     font-size: 60px; 
     font-family: 'Courier New', Courier, monospace;
+
 }
 
 body{
