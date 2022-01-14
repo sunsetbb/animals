@@ -11,19 +11,24 @@
 
 
 /*Text changes styling*/
-.cat {
+#cat {
     background-color: none;
     color: rgb(250, 109, 43); 
     font-size: 21px; 
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     /*making box now*/
-    width: 100%;
+    width: 600px;
     margin: none;
-    border: none;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: 5px;
+    border-color: rgb(250, 160, 150);
+    border-style: solid;
     padding: 100px;
     text-align: center;
-    
+    background-image: url(img/bg1.jpg);
+
 
 
 }
@@ -34,6 +39,7 @@ h1{
     font-size: 60px; 
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
+    text-align: center;
 
 }
 
@@ -68,8 +74,10 @@ h2{
     background-color:none ;
     font-family: 'Courier New', Courier, monospace;
     color: rgb(231, 155, 41); 
-    /*Can't change linked word letter*/
+    text-align: center;
+
 }
+
 
 /*background image*/
 /* #bg{
@@ -81,5 +89,10 @@ h2{
 /*cat images below*/
 #cat1{
     width: 400px;
-
+}
+#pig1{
+    width: 400px;
+}
+#rabbit1{
+    width: 400px;
 }
