@@ -9,6 +9,8 @@
 /*padding makes empty spaces in the box padding: 50px; (top right bottom left)*/
 
 
+/*span can be used for editting test in the middle*/
+
 
 /*Text changes styling*/
 #cat {
@@ -16,7 +18,7 @@
     color: rgb(250, 109, 43); 
     font-size: 21px; 
     font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
+    font-weight: normal;
     /*making box now*/
     max-width: 1000px;
         
@@ -40,12 +42,18 @@
 
 }
 
+.important{
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+
 h1{
     background-color: none;
     color: none; 
     font-size: 60px; 
     font-family: 'Courier New', Courier, monospace;
-    font-weight: bolder;
+    font-weight: normal;
     text-align: center;
 
     margin-top: 0px;
@@ -72,13 +80,7 @@ div{
     /* height: 600px;*/
 }
 
-span{
-    background-color:none ;
-    color: rgb(231, 155, 41);
-    font-size: 25px;
-    font-weight: bold;
 
-}
 h2{
     background-color:none ;
     font-family: 'Courier New', Courier, monospace;
@@ -100,7 +102,7 @@ h2{
     color: none; 
     font-size: 40px; 
     font-family: 'Courier New', Courier, monospace;
-    font-weight: bolder;
+    font-weight: normal;
     text-align: center;
 
     margin-top: 0px;
@@ -115,3 +117,4 @@ h2{
 #rabbit1{
     width: 400px;
 }
+
