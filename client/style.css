@@ -35,6 +35,8 @@
     background-image: url(img/bg1.jpg);
     align-items: center;
 
+    background-repeat: repeat;
+    background-position: center;
 
 }
 
@@ -46,6 +48,7 @@ h1{
     font-weight: bolder;
     text-align: center;
 
+    margin-top: 0px;
 }
 
 
@@ -92,6 +95,16 @@ h2{
 }
 */
 
+#title1{
+    background-color: none;
+    color: none; 
+    font-size: 40px; 
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    text-align: center;
+
+    margin-top: 0px;
+}
 /*cat images below*/
 #cat1{
     width: 400px;
