@@ -45,6 +45,7 @@
 .important{
     font-weight: bolder;
     text-decoration: underline;
+    text-transform: uppercase;
 }
 
 
