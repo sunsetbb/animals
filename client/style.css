@@ -19,7 +19,7 @@
     font-weight: bold;
     /*making box now*/
     width: 600px;
-    margin: none;
+    margin: auto;
     margin-top: 100px;
     margin-bottom: 100px;
     border: 5px;
@@ -28,7 +28,7 @@
     padding: 100px;
     text-align: center;
     background-image: url(img/bg1.jpg);
-
+    align-items: center;
 
 
 }
@@ -51,7 +51,8 @@ body{
      font-size: 21px; 
      font-family: 'Courier New', Courier, monospace;
 
-     background-image: url(img/backgroundImage1.jpg);
+     background-image: url(img/mainbg.jpg);
+     /*@babybluecat in unsplash.com*/
      background-size: cover;
      background-position: centre;
      position: relative;
@@ -73,7 +74,7 @@ span{
 h2{
     background-color:none ;
     font-family: 'Courier New', Courier, monospace;
-    color: rgb(231, 155, 41); 
+    color: rgb(224, 88, 163); 
     text-align: center;
 
 }
