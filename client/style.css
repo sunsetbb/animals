@@ -18,14 +18,19 @@
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     /*making box now*/
-    width: 600px;
+    max-width: 1000px;
+        
+        /*auto size box
+        width:100%; 
+        testing box size*/
+
     margin: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     border: 5px;
     border-color: rgb(250, 160, 150);
     border-style: solid;
-    padding: 100px;
+    padding: 60px 100px 60px 100px;
     text-align: center;
     background-image: url(img/bg1.jpg);
     align-items: center;
