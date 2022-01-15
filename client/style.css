@@ -13,6 +13,14 @@
 
 
 /*Text changes styling*/
+
+
+
+h1{
+    background-color: rgba(255, 192, 203, 0.288);
+}
+
+
 #cat {
     background-color: none;
     color: rgb(250, 109, 43); 
@@ -20,8 +28,8 @@
     font-family: 'Courier New', Courier, monospace;
     font-weight: normal;
     /*making box now*/
-    max-width: 1600px;
-    min-width: 1000px;
+    max-width: 80%;
+    min-width: 50%;
         /*auto size box
         * width:100%;/* 
         testing box size*/
@@ -32,7 +40,7 @@
     border: 5px;
     border-color: rgb(250, 160, 150);
     border-style: solid;
-    padding: 60px 100px 60px 100px;
+    padding: 60px 50px 60px 50px;
     text-align: center;
     background-image: url(img/bg1.jpg);
     align-items: center;
@@ -138,11 +146,11 @@ ul{
 
 }
 #fatcat{
-    width: 230px;
-    padding-bottom: 20px;
+    width: 260px;
+    padding-bottom: 40px;
     float:left;
-    margin-right: 30px;
-    padding-top: 30px;
+    margin-right: 10px;
+    padding-top: 50px;
 }
 
 #pig1{
@@ -161,13 +169,17 @@ ul{
 }/*list-style-type*/
 ol{
     list-style-position: inside;
-
 }
+ol li{
+    font-size: 22px;
+    font-weight: bold;
+}
+
 ul li{
     background-color: 0;
     margin-bottom: 10px;
-    font-size: 20px;
-    font-weight:bold;
+    font-size: 16px;
+    font-weight:normal;
 }
 
 .less{
@@ -195,8 +207,27 @@ a:focus{
     color:rgb(58, 221, 140);
 
 }
-footer{
-    background-color: pink;
+
+section{
+    float:left;
+    width:50%;
+  
+
+}
+aside{
+    float:right;
+    width: 50%;
     
+
+}
+
+footer{
+    margin-top: 50px;
+    clear: both;
+    color: rgb(255, 205, 205);
+    background-color: rgb(141, 51, 66);
+    padding: 50px 0;
+    text-align: center;
+    font-size: 16px;
 }
 
