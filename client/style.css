@@ -49,6 +49,62 @@ h1{
     background-position: center;
 
 }
+#Pig {
+    background-color: none;
+    color: rgb(250, 109, 43); 
+    font-size: 30px; 
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+    /*making box now*/
+    max-width: 80%;
+    min-width: 50%;
+        /*auto size box
+        * width:100%;/* 
+        testing box size*/
+
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 5px;
+    border-color: rgb(250, 160, 150);
+    border-style: solid;
+    padding: 60px 50px 60px 50px;
+    text-align: center;
+    background-image: url(img/bg1.jpg);
+    align-items: center;
+
+    background-repeat: repeat;
+    background-position: center;
+
+}
+#Rabbit {
+    background-color: none;
+    color: rgb(250, 109, 43); 
+    font-size: 30px; 
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+    /*making box now*/
+    max-width: 80%;
+    min-width: 50%;
+        /*auto size box
+        * width:100%;/* 
+        testing box size*/
+
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 5px;
+    border-color: rgb(250, 160, 150);
+    border-style: solid;
+    padding: 60px 50px 60px 50px;
+    text-align: center;
+    background-image: url(img/bg1.jpg);
+    align-items: center;
+
+    background-repeat: repeat;
+    background-position: center;
+
+}
 
 .important{
     font-weight: bolder;
@@ -152,7 +208,16 @@ ul{
     margin-right: 10px;
     padding-top: 50px;
 }
+#Persian{
+    width: 400px;
+    padding-bottom: 20px;
 
+}
+#scottishfold{
+    width: 400px;
+    padding-bottom: 20px;
+
+}
 #pig1{
     width: 400px;
 }
