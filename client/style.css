@@ -21,7 +21,7 @@
     font-weight: normal;
     /*making box now*/
     max-width: 1600px;
-    min-width: 1200px;
+    min-width: 1000px;
         /*auto size box
         * width:100%;/* 
         testing box size*/
@@ -97,14 +97,14 @@ h2{
 
 }
 
-section{
+/*section{
     background-color: 0;
 
-    padding-left: 40px;
-    padding-right: 40px;
-    align-items: center;
+    /*padding-left: 40px;
+    padding-right: 40px;/
+    align-items: center;/
 
-}
+}*/
 ul{
     list-style-image: url(img/caticon.png);
 }
@@ -131,10 +131,7 @@ ul{
     margin-top: 0px;
 }
 /*cat images below*/
-#dog1{
-    width: 300px;
-    padding-bottom: 20px;
-}
+
 #cat2{
     width: 300px;
     padding-bottom: 20px;
@@ -145,6 +142,7 @@ ul{
     padding-bottom: 20px;
     float:left;
     margin-right: 30px;
+    padding-top: 30px;
 }
 
 #pig1{
@@ -154,11 +152,9 @@ ul{
     width: 400px;
 }
 #column1{
-    float:left;
+    align-items: center;
 }
-#column1{
-    float:right;
-}
+
 #catol{
     text-align:left;
     padding: 50px;
