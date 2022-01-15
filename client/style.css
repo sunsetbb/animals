@@ -105,6 +105,9 @@ section{
     align-items: center;
 
 }
+ul{
+    list-style-image: url(img/caticon.png);
+}
 
 
 /*background image*/
@@ -149,10 +152,29 @@ section{
 #column1{
     float:right;
 }
+#catol{
+    text-align:left;
+    padding: 50px;
+}/*list-style-type*/
+ol{
+    list-style-position: inside;
+
+}
+ul li{
+    background-color: rgba(255, 252, 60, 0.151);
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight:bold;
+}
 
 .less{
     font-size: 20px;
     color: rgb(124, 124, 124);
+}
+.small{
+    font-size: 12px;
+    color: rgb(124, 124, 124);
+    
 }
 a:visited{
     color:rgb(255, 118, 200);
@@ -170,3 +192,5 @@ a:focus{
     color:rgb(58, 221, 140);
 
 }
+
+
