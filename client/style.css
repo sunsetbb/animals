@@ -140,6 +140,13 @@ ul{
     padding-bottom: 20px;
 
 }
+#fatcat{
+    width: 230px;
+    padding-bottom: 20px;
+    float:left;
+    margin-right: 30px;
+}
+
 #pig1{
     width: 400px;
 }
@@ -161,7 +168,7 @@ ol{
 
 }
 ul li{
-    background-color: rgba(255, 252, 60, 0.151);
+    background-color: 0;
     margin-bottom: 10px;
     font-size: 20px;
     font-weight:bold;
