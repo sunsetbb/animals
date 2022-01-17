@@ -14,7 +14,11 @@
 
 /*Text changes styling*/
 
-
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
 
 h1{
     background-color: rgba(255, 192, 203, 0.288);
@@ -288,12 +292,86 @@ aside{
 }
 
 footer{
-    margin-top: 50px;
+    margin-bottom: 0px;
     clear: both;
     color: rgb(255, 205, 205);
     background-color: rgb(141, 51, 66);
-    padding: 50px 0;
+    padding: 40px 0;
     text-align: center;
     font-size: 16px;
 }
 
+nav {
+    display:flex;   /*so all the list come close> */
+    justify-content: space-around;    /*element space around the box*/
+    align-items: center;
+    min-height: 10vh;
+    background-color: rgb(235, 123, 179);
+    
+
+}
+.logo{
+    color:rgb(241, 214, 247);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 24;
+}
+.navbarlinks{
+    display: flex;
+    width: 38%;
+    justify-content: space-around;    
+}
+
+.navbarlinks a{
+    color:rgb(241, 214, 247);
+    letter-spacing: 2px;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.multiline{
+    display: none;
+    cursor: pointer;
+
+}
+
+.multiline div{
+    width: 30px;
+    height: 4px;
+    background-color:rgb(250, 214, 227);
+    margin:6px;
+}
+
+
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    .navbarlinks{
+        position:absolute;
+        right: 0px;
+        height: 90vh;
+        top:10vh;
+        background-color: rgb(250, 214, 227);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .navbarlinks li{
+
+        opacity: 0;
+    }
+    .multiline{
+        display:block;
+
+    }
+
+}
+.nav-active{
+    transform: translateX(0%)
+    
+}
