@@ -20,11 +20,6 @@
     box-sizing: border-box;
 }
 
-h1{
-    background-color: rgba(255, 192, 203, 0.288);
- 
-}
-
 
 #cat {
     background-color: none;
@@ -323,16 +318,30 @@ footer{
 }
 
 .navbar{
-    width: 88%;
+    width: 100%;
     margin:auto;
-    padding: 15px 0;
+    padding: 0px 0;
+    padding-left: 10px;
+    border-bottom: 3px;
+    border-bottom-color: rgb(193, 224, 236);
+    border-bottom-style: solid;
+    background-color: rgba(255, 225, 239, 0.24);
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+.navbar p{
+    margin-top: 10px;
+    font-size: 36px;
+    font-weight: bold;
+    
+}
+#top1{
+    margin-bottom: 40px;
+}
 .logo{
-    width: 50px;
+    width: 40px;
     cursor: pointer;
 }
 
@@ -342,9 +351,10 @@ footer{
 }
 .navbar ul li a{ 
     text-decoration: none;
-    color:rgb(122, 45, 45);
-    font-size: 20px;
+    color:rgb(163, 63, 63);
+    font-size: 22px;
     font-weight: bolder;
+    margin-right: 30px;
 }
 
 body::-webkit-scrollbar{
