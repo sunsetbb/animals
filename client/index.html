@@ -29,7 +29,7 @@
 
       </ul>
     </div>
-<p>. </p>
+<p>.  </p>
 
 
 
@@ -37,6 +37,8 @@
     <!-- This is the topic header.-->
     <h1>Animals</h1>
     <!-- This is the second header-->
+    <p id = "time"></p>
+
     <p id = "title1">Three cute animals!!!</p>
 
     <!-- Creating an unordered list-->
@@ -101,9 +103,15 @@
       </ol>
 
 <!-- This is a section button using javascript-->
-      <button onclick="revealMessage()"> Click here! </button>
-      <p id ="hiddenMessage" style="display:none"> More cute cats! </p>
+      <button onclick="revealMessage()">
+        <p> More cute cats! </p>
+        
+      </button>
+      <p id ="hiddenMessage" style="display:none"> Just kidding! Don't try to click again! </p>
 <!--end of first part-->
+
+    <p id = "printpage" class = "less">Click the button below to print the current page.</p>
+    <button onclick="window.print()">Print the page!</button>
     </div>
 
 

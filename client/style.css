@@ -119,7 +119,11 @@ h1{
 
 
 
-
+#time{
+    font-size: 18px;
+    float:right;
+    
+}
 
 a{
     color:rgb(212, 18, 138);
@@ -178,7 +182,19 @@ ul{
     list-style-image: url(img/caticon.png);
 }
 
+button{
+    padding: 5px 30px;  
+    background: transparent;
+    outline:none;
+    border: 3px solid rgb(49, 165, 148);
+    border-radius: 22px;
+    color:rgb(79, 168, 124);
+    font-size: 20px;
+    font-weight:bolder;
+    cursor:pointer;
+    align-items: center;
 
+}
 /*background image*/
 /* #bg{
     width: 100%;
@@ -197,10 +213,12 @@ ul{
     font-weight: normal;
     text-align: center;
 
-    margin-top: 50px;
+    margin-top: 60px;
 }
 /*cat images below*/
-
+#printpage{
+    margin-top: 50px ;
+}
 #cat2{
     width: 300px;
     padding-bottom: 20px;
