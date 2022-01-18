@@ -201,7 +201,10 @@ button{
     height: 100vh;
 }
 */
-
+#hiddenMessage{
+    font-size: 21px;
+    font-weight: bolder;
+}
 
 
 
