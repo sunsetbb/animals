@@ -22,7 +22,7 @@
 
 h1{
     background-color: rgba(255, 192, 203, 0.288);
-
+ 
 }
 
 
@@ -163,7 +163,7 @@ h2{
     font-family: 'Courier New', Courier, monospace;
     color: rgb(224, 88, 163); 
     text-align: center;
-
+    margin-bottom: 50px;
 }
 
 /*section{
