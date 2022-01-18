@@ -20,32 +20,19 @@
 
   <body>
 
-    <nav>
-      <div class = "logo">
-        <h3>The navbar</h3>
+    <div class = "navbar">
+      <img src="img/icona.jpg" class = "logo">
+      <ul>
+        <li ><a href="#catnav">Cat</a></li>
+        <li ><a href="#pignav">Pig</a></li>
+        <li ><a href="#rabbitnav">Rabbit</a></li>
 
-      </div>
-      <ul class = "navbarlinks">
-        <li>
-          <a href = listnav>Home</a>
-        </li>
-        <li>
-          <a href = listnav>Cat</a>
-        </li>
-        <li>
-          <a href = listnav>Pig</a>
-        </li>
-        <li>
-          <a href = listnav>Rabbit</a>
-        </li>
       </ul>
-      <div class = "multiline">
-        <div class = "firstl"></div>
-        <div class = "Secondl"></div>
-        <div class = "Thirdl"></div>
+    </div>
+<p>. </p>
 
-      </div>
-    </nav>
+
+
 
     <!-- This is the topic header.-->
     <h1>Animals</h1>
@@ -58,7 +45,7 @@
     
     <!--Separate section/ Division-->
     <div id = "cat"> 
-      <h2><strong><a href="https://en.wikipedia.org/wiki/Cat">CAT!!!</a></strong></h2>
+      <h2><strong><section id = "catnav"><a href="https://en.wikipedia.org/wiki/Cat">CAT!!!</a></section></strong></h2>
       <p>This is what a cat looks like. </p>
       <!-- span can be used inside div and p -->
       <p> (PS&#58; <span class = "important">Face covering</span> is very important.)</p>
@@ -120,15 +107,15 @@
 
 
     <div id = "Pig"> 
-      <h2><strong><a href="https://en.wikipedia.org/wiki/Pig">Pig!!!</a></strong></h2>    
+      <h2><strong><section id = "pignav"><a href="https://en.wikipedia.org/wiki/Pig">Pig!!!</a></section></strong></h2>    
       <p>This is what a piggy looks like. </p>
       <img src="img/pig1.jpg" alt ="A little piggy" id = "pig1">
       <p class = "less">pic from #mignonettetakespictures</p>
     </div>
 
       <div id = "Rabbit"> 
-      <h2><strong><a href="https://en.wikipedia.org/wiki/Rabbit">Rabbit!!!</a></strong></h2>    
-      <p>This is what a Bunny looks like. </p>
+      <h2><strong><section id = "rabbitnav"><a href="https://en.wikipedia.org/wiki/Rabbit">Rabbit!!!</a></section></strong></h2>    
+      <p>This is what a Bunny looks like. 
       <img src="img/rabbit1.jpg" alt ="A rabbit with santa hat" id = "rabbit1">
       <p class = "less">pic from #funny_cute_rabbit</p>
       </div>
