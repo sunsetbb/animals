@@ -6,3 +6,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor =>{
         });
     });
 });
+
+function revealMessage(){
+    document.getElementById("hiddenMessage").style.display = 'block';
+
+
+}
