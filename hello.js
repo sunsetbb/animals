@@ -7,6 +7,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor =>{
     });
 });
 
+document.getElementById("time").innerHTML = "Date : " + Date();
+
 
 
 const element1 = document.getElementById("hiddenMessage");
@@ -16,10 +18,10 @@ catnames[0]= "Maine Coon";
 catnames[1]=  "Ragdoll";
 catnames[2]=  "Birman";
 var fal = -1;
-const falnames = []
+const falnames = [];
 falnames[0] = "Told you not to click more. I don't have more names.(random)";
-falnames[1] = "Saying again to you, NO MORE CATS.(random)"
-falnames[2] = "Guess what, I actually like pigs more. Just stop clicking no more cats.(random)"
+falnames[1] = "Saying again to you, NO MORE CATS.(random)";
+falnames[2] = "Guess what, I actually like pigs more. Just stop clicking no more cats.(random)";
 
 function revealMessage(){
     document.getElementById("hiddenMessage").style.display = 'block';
@@ -38,15 +40,40 @@ function revealMessage(){
 
     }
     else if (count>=1){
-        count -=1
-        element1.innerHTML = "Cat name" + (count + 1) +" :" + catnames[count];
+        count -=1;
+        element1.innerHTML = "Cat name " + (count + 1) +" :" + catnames[count];
         catnames[count];
     }
 
 }
+const element2 = document.getElementById("hiddenMessage2");
+let text = "";
+const catcolor = {
+    MaineCoon : "black, blue, cream, and white",
+    Ragdoll : "Seal, Chocolate, Lilac, and Blue",
+    Birman : " Seal, Blue, Lilac, Red, Cream, Chocolate, Seal Torti (female only), Seal Tortie Tabby, Blue Tabby, Seal Tabby"
+};
+count2 = 0
+text2 = ""
+function reveallist(){
+    document.getElementById("hiddenMessage2").style.display = 'block';
+    if (count2 == 0){
+        for (var i = 0; i<= 2; i++){
+            text += "Cat name " + (i + 1) + " :" + catnames[i] + "<br>";
+        }
+    
+        for (var elem in catcolor){
+            text2 += "Cat Type: " + elem + ", common colors are " + catcolor[elem] + "<br>";  
+        }
+        element2.innerHTML = text + text2;
+        count2 += 1
+    }
+    else{
+        text2 = ""
+        text = ""
+        element2.innerHTML = text + text2;
+        count2 = 0;
+    }
 
 
-
-
-
-document.getElementById("time").innerHTML = "Date : " + Date();
+}
