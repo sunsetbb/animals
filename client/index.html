@@ -111,18 +111,25 @@
       <p id ="hiddenMessage" style="display:none"> nothing should appear</p>
 <!--end of first part-->
 
-    <p id = "printpage" class = "less">Click the button below to print the current page.</p>
-    <button onclick="window.print()">Print the page!</button>
+      <p id = "printpage" class = "less">Click the button below to print the current page.</p>
+      <button onclick="window.print()">Print the page!</button>
 
-    
-    <p class = "less">Click here for cat names in list</p>
-    <button onclick="reveallist()">
-      <p> Cats in list </p>
       
-    </button>
-    <p id ="hiddenMessage2" style="display:none"> nothing should appear</p>
+      <p class = "less">Click here for cat names in list</p>
+      <button onclick="reveallist()">
+        <p> Cats in list </p>
+        
+      </button>
+      <p id ="hiddenMessage2" style="display:none"> nothing should appear</p>
 
+      <p id = "question1">Do you like my cats?</p>
+      <p><span class = "less">(Type yes please, otherwise I assume you said no!!!)</span></p>
 
+      <input id="likecats">
+
+      <button type="button" onclick="funclikecats()">Submit</button>
+
+      <p id="output1"></p>
 
     </div>
     

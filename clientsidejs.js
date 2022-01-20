@@ -79,3 +79,14 @@ function reveallist(){
 
 
 }
+
+function funclikecats() {
+    let x = document.getElementById("likecats").value;
+    let text3 = "";
+    if (x == "yes" || x == "Yes") {
+      text3 = "I like the cats too! (●'◡'●)";
+    } else {
+      text3 = "I hate you.";
+    }
+    document.getElementById("output1").innerHTML = text3;
+  }
