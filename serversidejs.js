@@ -23,7 +23,7 @@ var server = http.createServer(function(request, response){
         fileStream.pipe(response);
 
     }else if(request.url.match("\.js$")){
-        var jsPath = path.join(__dirname, request.url);
+        var jsPath = path.join(__dirname, 'client', request.url);
         var fileStream = fs.createReadStream(jsPath, "UTF-8");
         response.writeHead(200, {"Content-Type": "text/js"});
         fileStream.pipe(response);
