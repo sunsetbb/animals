@@ -1,3 +1,33 @@
+/*express js app part */
+const express = require('express');
+const app = express();
+
+const path = require('path');
+const fs = require('fs');
+
+const port = 8080;
+
+// static files
+app.use(express.static('client'))
+app.use('/css', express.static(__dirname + 'client/css'))
+app.use('/js', express.static(__dirname + 'client/js'))
+app.use('/img', express.static(__dirname + 'client/img'))
+
+
+app.get('/', function(request, response){
+    response.sendFile(path.join(__dirname, '/client/index.html'))
+});
+
+app.listen(port,function(error){
+    if(error) {
+        console.log("Error pop-up:", error)
+    }else{
+        console.log('Server running on port http://127.0.0.1:8080/')
+    }
+});
+
+
+/* Web page part node js*
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
@@ -59,3 +89,4 @@ server.listen(port,function(error){
     console.log('Server running on port http://127.0.0.1:8080/')
     }
 });
+*/
