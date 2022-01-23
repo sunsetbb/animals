@@ -4,7 +4,8 @@
   "description": "simple one page web app",
   "main": "serversidejs.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon serversidejs.js" 
   },
   "repository": {
     "type": "git",

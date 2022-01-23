@@ -1,4 +1,4 @@
-/*express js app part */
+/*express js app part note that this app set npm start to start */
 const express = require('express');
 const app = express();
 
