@@ -5,7 +5,6 @@ const app = express();
 const path = require('path');
 const fs = require('fs');
 
-const port = 8080;
 
 // static files
 app.use(express.static('client'))
@@ -18,13 +17,12 @@ app.get('/', function(request, response){
     response.sendFile(path.join(__dirname, '/client/index.html'))
 });
 
-app.listen(port,function(error){
-    if(error) {
-        console.log("Error pop-up:", error)
-    }else{
-        console.log('Server running on port http://127.0.0.1:8080/')
-    }
-});
+
+//port
+const port = process.env.PORT || 8080;  //replacement port if not previously set in cmd ==export PORT = 8000
+
+
+app.listen(port,() => console.log(`server running at http://127.0.0.1:${port}/`));    // backtick for template string 
 
 
 /* Web page part node js*
