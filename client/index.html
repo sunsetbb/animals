@@ -122,6 +122,8 @@
       </button>
       <p id ="hiddenMessage2" style="display:none"> nothing should appear</p>
 
+
+
       <p id = "question1">Do you like my cats?</p>
       <p><span class = "less">(Type yes please, otherwise I assume you said no!!!)</span></p>
 
@@ -130,6 +132,25 @@
       <button type="button" onclick="funclikecats()">Submit</button>
 
       <p id="output1"></p>
+
+<!--
+
+      <p id = "question2">You like other animals?</p>
+      <p><span class = "less">You can write in the box below about your favourite animals: </span></p>
+
+      <input id="add">
+
+      <button type="button" onclick="moreanim()">Submit</button>
+
+      <p id="output2"></p>
+
+-->   <p>Type in the name of pet u want to add: </p>
+      <form action="/action" method="POST" required>
+        <input type="text" placeholder="Add pet name" required>
+        <button type = "submit">Submit</button>
+      </form>
+
+
 
     </div>
     
@@ -162,6 +183,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <script src="clientsidejs.js"></script>
+    <script src = "../serversidejs.js"></script>
 
   </body>
 

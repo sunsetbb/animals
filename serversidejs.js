@@ -1,9 +1,35 @@
+
+
+
 /*express js app part note that this app set npm start to start */
 const express = require('express');
 const app = express();
-
+var bodyParser = require('body-parser');
+var urlencodedParser = bodyParser.urlencoded({ extended: false});
 const path = require('path');
-const fs = require('fs');
+const port = process.env.PORT || 8080;  //replacement port if not previously set in cmd ==export PORT = 8000
+
+
+
+/*get + post */
+const anims = [
+    'cat',
+    'pig',
+    'rabbit'
+]
+
+
+
+app.post('/action', (req,res) => {
+    const datan = req.body;
+    anims.push(datan);
+    console.log(req.body);
+    res.status(200).send('Added pet')
+});
+
+app.get('/anims', (req, res) =>{
+    res.status(200).send(anims);
+});
 
 
 // static files
@@ -14,17 +40,17 @@ app.use('/img', express.static(__dirname + 'client/img'))
 
 
 app.get('/', function(request, response){
-    response.sendFile(path.join(__dirname, '/client/index.html'))
+    response.status(200).sendFile(path.join(__dirname, '/client/index.html'))
 });
 
 
 //port
-const port = process.env.PORT || 8080;  //replacement port if not previously set in cmd ==export PORT = 8000
 app.listen(port,function(error){
     if(error) {
         console.log("Error pop-up:", error)
     }else{
         console.log(`server running at http://127.0.0.1:${port}/`)
+ 
     }
 });
 
@@ -67,7 +93,7 @@ var server = http.createServer(function(request, response){
         var img2Path = path.join(__dirname, 'client', request.url);
         var fileStream = fs.createReadStream(img2Path);
         response.writeHead(200, {"Content-Type": "img/jpg"});
-        fileStream.pipe(response);
+        fileStream.pipe(response);  
     }else if(request.url.match("\.jfif$")){
         var img3Path = path.join(__dirname, 'client', request.url);
         var fileStream = fs.createReadStream(img3Path);
