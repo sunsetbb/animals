@@ -21,7 +21,6 @@ const anims = [
 
 
 app.post('/action', (req,res) => {
-    const data = req.body;
     const datan = 'fish';
     anims.push(datan);
     console.log(req.body);
