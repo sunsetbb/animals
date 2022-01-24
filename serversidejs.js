@@ -22,6 +22,7 @@ const anims = [
 
 app.post('/action', (req,res) => {
     const datan = req.body;
+    const datan = 'fish';
     anims.push(datan);
     console.log(req.body);
     res.status(200).send('Added pet')
