@@ -20,10 +20,13 @@ app.get('/', function(request, response){
 
 //port
 const port = process.env.PORT || 8080;  //replacement port if not previously set in cmd ==export PORT = 8000
-
-
-app.listen(port,() => console.log(`server running at http://127.0.0.1:${port}/`));    // backtick for template string 
-
+app.listen(port,function(error){
+    if(error) {
+        console.log("Error pop-up:", error)
+    }else{
+        console.log(`server running at http://127.0.0.1:${port}/`)
+    }
+});
 
 /* Web page part node js*
 const http = require('http');
