@@ -5,6 +5,7 @@
   "main": "serversidejs.js",
   "scripts": {
     "test": "jest",
+    "pretest": "eslint *.js",
     "start": "nodemon serversidejs.js"
   },
   "repository": {

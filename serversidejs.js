@@ -4,8 +4,8 @@
 /*express js app part note that this app set npm start to start */
 const express = require('express');
 const app = express();
-var bodyParser = require('body-parser')
-var urlencodedParser = bodyParser.url
+var bodyParser = require('body-parser');
+var urlencodedParser = bodyParser.url;
 const path = require('path');
 const port = process.env.PORT || 8080;  //replacement port if not previously set in cmd ==export PORT = 8000
 
@@ -16,12 +16,12 @@ const anims = [
     {title: 'cat'},
     {title: 'pig'},
     {title: 'rabbit'}
-]
+];
 
 app.post('/action', (req,res) => {
     const datan = {title: 'fish'};
     anims.push(datan);
-    res.status(200).send('Added pet')
+    res.status(200).send('Added pet');
 });
 
 app.get('/action2', (req, res) =>{
@@ -30,23 +30,23 @@ app.get('/action2', (req, res) =>{
 
 
 // static files
-app.use(express.static('client'))
-app.use('/css', express.static(__dirname + 'client/css'))
-app.use('/js', express.static(__dirname + 'client/js'))
-app.use('/img', express.static(__dirname + 'client/img'))
+app.use(express.static('client'));
+app.use('/css', express.static(__dirname + 'client/css'));
+app.use('/js', express.static(__dirname + 'client/js'));
+app.use('/img', express.static(__dirname + 'client/img'));
 
 
 app.get('/', function(request, response){
-    response.status(200).sendFile(path.join(__dirname, '/client/index.html'))
+    response.status(200).sendFile(path.join(__dirname, '/client/index.html'));
 });
 
 
 //port
 app.listen(port,function(error){
     if(error) {
-        console.log("Error pop-up:", error)
+        console.log("Error pop-up:", error);
     }else{
-        console.log(`server running at http://127.0.0.1:${port}/`)
+        console.log(`server running at http://127.0.0.1:${port}/`);
  
     }
 });
