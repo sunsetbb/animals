@@ -12,7 +12,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor =>{
 document.getElementById("time").innerHTML = "Date : " + Date();
 
 
-
 const element1 = document.getElementById("hiddenMessage");
 var count= 3;
 const catnames = [];
@@ -46,8 +45,8 @@ function revealMessage(){
         element1.innerHTML = "Cat name " + (count + 1) +" :" + catnames[count];
         catnames[count];
     }
-
 }
+
 const element2 = document.getElementById("hiddenMessage2");
 let text = "";
 const catcolor = {
@@ -77,11 +76,10 @@ function reveallist(){
         count2 = 0;
     }
 
-
 }
 
 function funclikecats() {
-    let x = document.getElementById("likecats").value;
+    let x = document.getElementById("likecats").value || "no";
     let text3 = "";
     if (x == "yes" || x == "Yes") {
       text3 = "I like the cats too! (●'◡'●)";

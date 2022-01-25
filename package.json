@@ -4,7 +4,7 @@
   "description": "simple one page web app",
   "main": "serversidejs.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "nodemon serversidejs.js"
   },
   "repository": {
@@ -20,5 +20,10 @@
   "dependencies": {
     "body-parser": "^1.19.1",
     "express": "^4.17.2"
-  }
+  },
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "jest": "^27.4.7"
+  },
+  "keywords": []
 }

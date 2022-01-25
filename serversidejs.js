@@ -4,8 +4,8 @@
 /*express js app part note that this app set npm start to start */
 const express = require('express');
 const app = express();
-var bodyParser = require('body-parser');
-var urlencodedParser = bodyParser.urlencoded({ extended: false});
+var bodyParser = require('body-parser')
+var urlencodedParser = bodyParser.url
 const path = require('path');
 const port = process.env.PORT || 8080;  //replacement port if not previously set in cmd ==export PORT = 8000
 
@@ -13,21 +13,18 @@ const port = process.env.PORT || 8080;  //replacement port if not previously set
 
 /*get + post */
 const anims = [
-    'cat',
-    'pig',
-    'rabbit'
+    {title: 'cat'},
+    {title: 'pig'},
+    {title: 'rabbit'}
 ]
 
-
-
 app.post('/action', (req,res) => {
-    const datan = 'fish';
+    const datan = {title: 'fish'};
     anims.push(datan);
-    console.log(req.body);
     res.status(200).send('Added pet')
 });
 
-app.get('/anims', (req, res) =>{
+app.get('/action2', (req, res) =>{
     res.status(200).send(anims);
 });
 
